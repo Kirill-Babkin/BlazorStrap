@@ -13,7 +13,9 @@ Bootstrap 4 Components for Blazor Framework
 ### Blazor WebAssembly (Client-side Blazor)
 
 1. Inside the `<head>` element of your `wwwroot/index.html`, add `<script src="_content/BlazorStrap/blazorStrap.js"></script>`.
-2. In `Program`, add `builder.Services.AddBootstrapCss();`.
+2. (optional) Inside the `<head>` element of your `wwwroot/index.html` after `blazorStrap.js` script, add  `<script src="_content/BlazorStrap/popper.min.js"></script>` to enable tooltips and other interactive elemts.
+3. In `Program`, add `builder.Services.AddBootstrapCss();`.
+
 
 ### Blazor Server (Server-side Blazor)
 
